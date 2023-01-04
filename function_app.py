@@ -32,7 +32,7 @@ async def update_dns(req: func.HttpRequest) -> func.HttpResponse:
         logging.info("Unauthorized request, no auth header")
         return func.HttpResponse(UNAUTHORIZED)
     basic_auth = auth.split(" ")[1]
-    credential = basic_auth.decode("base64")
+    credential = basic_auth.encode()
     logging.info("Credential: %s", credential)
     if credential != os.getenv("UpdaterCredential"):
         logging.info("Unauthorized request, incorrect credentials")
