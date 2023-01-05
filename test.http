@@ -1,0 +1,5 @@
+GET http://localhost:7071/api/update_dns?hostname=@.test.com&myip=10.0.0.1
+
+###
+
+GET https://edvandnsnoip.azurewebsites.net/api/update_dns?hostname=test.test.com,test2.test.com&myip=10.0.0.1
