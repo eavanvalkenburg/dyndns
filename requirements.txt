@@ -5,3 +5,4 @@
 azure-functions
 azure-mgmt-dns
 azure-identity
+aiohttp
